@@ -27,6 +27,7 @@ module Fae
       [
         item('Clients', path: admin_clients_path),
         item('Suppliers', path: admin_suppliers_path),
+        item('Campaigns', path: admin_campaigns_path),
         # scaffold inject marker
       ]
     end
