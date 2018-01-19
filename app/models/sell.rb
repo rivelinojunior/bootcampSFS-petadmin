@@ -6,6 +6,8 @@ class Sell < ApplicationRecord
   belongs_to :discount
   belongs_to :client
 
+  validates :client, presence: true
+
   def fae_display_field
     id
   end
