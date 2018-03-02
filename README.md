@@ -1,24 +1,47 @@
-# README
+# About
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An administrative system for managing a PetShop that allows the registration of sales, registration of customers, products, discounts, services as well as the scheduling of services and sending promotional emails to the client list.
 
-Things you may want to cover:
+## Purpose
 
-* Ruby version
+This project has with purpose the learning new skills. The project was developed following the lessons of bootcamp in the [OneBitCode](onebitcode.com).
 
-* System dependencies
+## Prerequisites
 
-* Configuration
+* Docker
+* Docker Compose
 
-* Database creation
+## Getting started
 
-* Database initialization
+The steps below will help you in the building this project in the development and test environment:
 
-* How to run the test suite
+### 1. Clone the Project
+```
+git clone git@github.com:rivelinojunior/bootcampSFS-petadmin.git
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### 2. Building the project with docker/docker-compose
+```
+  docker-compose up --build
+```
 
-* Deployment instructions
+### 3. Access the application in your browser
+> localhost:3000/admin
 
-* ...
+## Running the test
+```
+docker-compose run --rm website bundle exec rspec
+```
+
+## Building with the technologies
+* Ruby on Rails
+* Postgresql
+* Docker / Docker Compose
+* Rspec
+* Sidekiq
+* Redis
+* Fae
+
+## Credits
+* Rivelino Junior - [@rivelinojunior](http://github.com/rivelinojunior)
+* Onebitcode - [blog](http://www.onebitcode.com)
